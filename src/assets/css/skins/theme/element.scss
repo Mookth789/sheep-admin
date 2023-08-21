@@ -1,0 +1,47 @@
+@mixin element-light {
+  --t-color-primary: #409eff;
+  --el-color-primary: #409eff;
+  --el-color-primary-light-3: #{mix(rgba(0, 0, 0, 0), #409eff, 30%)};
+  --el-color-primary-light-5: #{mix(rgba(0, 0, 0, 0), #409eff, 50%)};
+  --el-color-primary-light-7: #{mix(rgba(0, 0, 0, 0), #409eff, 70%)};
+  --el-color-primary-light-8: #{mix(rgba(0, 0, 0, 0), #409eff, 80%)};
+  --el-color-primary-light-9: #{mix(rgba(0, 0, 0, 0), #409eff, 90%)};
+  --t-bg-hover: #f2f7fd;
+  --t-bg-focus: #b3d8ff;
+  --t-bg-active: #d1e8ff;
+  --t-bg-disabled: #f5f7fa;
+  --t-btn-hover: #66b1ff;
+  --t-btn-focus: #508ddf;
+  --t-btn-active: #409eff;
+  // --t-btn-disabled: #8cc5ff;
+  // --t-bg-hover-1: #e4e9f4;
+  // --t-bg-active-1: #eff5fb;
+  --sa-background-hex-hover: #f5f7fa;
+  --sa-background-hex-active: #d1e8ff;
+  --t-bg-color: #eef2fa;
+  --t-bg-app: #deebf7;
+}
+
+@mixin element-dark {
+  --t-color-primary: #409eff;
+  --el-color-primary: #409eff;
+  --el-color-primary-light-3: #{mix(rgba(0, 0, 0, 0), #409eff, 30%)};
+  --el-color-primary-light-5: #{mix(rgba(0, 0, 0, 0), #409eff, 50%)};
+  --el-color-primary-light-7: #{mix(rgba(0, 0, 0, 0), #409eff, 70%)};
+  --el-color-primary-light-8: #{mix(rgba(0, 0, 0, 0), #409eff, 80%)};
+  --el-color-primary-light-9: #{mix(rgba(0, 0, 0, 0), #409eff, 90%)};
+  --t-bg-hover: #2e353d;
+  --t-bg-focus: #2e3a45;
+  --t-bg-active: #2f3e4e;
+  --t-bg-disabled: #2d3339;
+  --t-btn-hover: #66b1ff;
+  --t-btn-focus: #508ddf;
+  --t-btn-active: #409eff;
+  // --t-btn-disabled: #8cc5ff;
+  // --t-bg-hover-1: #181d24;
+  // --t-bg-active-1: #2f3741;
+  --sa-background-hex-hover: #2e353d;
+  --sa-background-hex-active: #37465c;
+  --t-bg-color: #1d212b;
+  --t-bg-app: #010d20;
+}

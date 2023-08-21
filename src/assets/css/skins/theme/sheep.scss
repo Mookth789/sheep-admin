@@ -1,0 +1,47 @@
+@mixin sheep-light {
+  --t-color-primary: #806af6;
+  --el-color-primary: #806af6;
+  --el-color-primary-light-3: #{mix(rgba(0, 0, 0, 0), #806af6, 30%)};
+  --el-color-primary-light-5: #{mix(rgba(0, 0, 0, 0), #806af6, 50%)};
+  --el-color-primary-light-7: #{mix(rgba(0, 0, 0, 0), #806af6, 70%)};
+  --el-color-primary-light-8: #{mix(rgba(0, 0, 0, 0), #806af6, 80%)};
+  --el-color-primary-light-9: #{mix(rgba(0, 0, 0, 0), #806af6, 90%)};
+  --t-bg-hover: #f4f3fc;
+  --t-bg-focus: #b9adf9;
+  --t-bg-active: #dfdafb;
+  --t-bg-disabled: #f7f7fa;
+  --t-btn-hover: #9988f8;
+  --t-btn-focus: #7560e2;
+  --t-btn-active: #806af6;
+  // --t-btn-disabled: #b3a6fa;
+  // --t-bg-hover-1: #e7e5f4;
+  // --t-bg-active-1: #e7e5f4;
+  --sa-background-hex-hover: #f7f7fa;
+  --sa-background-hex-active: #dfdafb;
+  --t-bg-color: #f0f0fd;
+  --t-bg-app: #e1e4ff;
+}
+
+@mixin sheep-dark {
+  --t-color-primary: #806af6;
+  --el-color-primary: #806af6;
+  --el-color-primary-light-3: #{mix(rgba(0, 0, 0, 0), #806af6, 30%)};
+  --el-color-primary-light-5: #{mix(rgba(0, 0, 0, 0), #806af6, 50%)};
+  --el-color-primary-light-7: #{mix(rgba(0, 0, 0, 0), #806af6, 70%)};
+  --el-color-primary-light-8: #{mix(rgba(0, 0, 0, 0), #806af6, 80%)};
+  --el-color-primary-light-9: #{mix(rgba(0, 0, 0, 0), #806af6, 90%)};
+  --t-bg-hover: #33313c;
+  --t-bg-focus: #363344;
+  --t-bg-active: #39364c;
+  --t-bg-disabled: #313038;
+  --t-btn-hover: #6d60c7;
+  --t-btn-focus: #7560e2;
+  --t-btn-active: #806af6;
+  // --t-btn-disabled: #b3a6fa;
+  // --t-bg-hover-1: #1b1924;
+  // --t-bg-active-1: #3a364e;
+  --sa-background-hex-hover: #33313c;
+  --sa-background-hex-active: #403b5c;
+  --t-bg-color: #1c1c2b;
+  --t-bg-app: #0f0120;
+}

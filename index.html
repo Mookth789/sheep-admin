@@ -1,13 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="referer" content="never" />
+  <meta name="renderer" content="webkit" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"
+    />
+  <title>...</title>
+  <link rel="icon" href="/favicon.ico" />
+
+  <style>
+    html,
+    body,
+    #app {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,sans-serif;
+    }
+
+    .preload {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      letter-spacing: 1px;
+      background: radial-gradient(circle at 1px 1px,#E4E4E4 1px,#FDFDFD 0); 
+      background-size: 16px 16px;
+    }
+
+    .preload.dark {
+      background: radial-gradient(circle at 1px 1px,#524D52 1px,#2c2c2c 0); 
+      background-size: 16px 16px;
+    }
+
+    .preload .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      user-select: none;
+      flex-grow: 1;
+    }
+
+    .preload .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .preload .name {
+      text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.24);
+    }
+
+    .preload .name .left {
+      font-weight: 400;
+      font-size: 43px;
+      line-height: 62px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .preload .name .right {
+      font-weight: 200;
+      font-size: 43px;
+      line-height: 62px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .preload.light .name {
+      color: #262626;
+    }
+
+    .preload.dark .name {
+      color: #d6d6d6;
+    }
+
+    .preload .logo {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+      filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.24));
+    }
+
+    .preload .title {
+      color: #595959;
+      font-weight: 400;
+      font-size: 14px;
+      width: fit-content;
+      height: 20px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24); */
+    }
+
+    .dark .title {
+      color: #ADADAD;
+    }
+  </style>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d7cc31c4e9db80241a42a76d662e5882";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="preload">
+      <div class="container">
+        <div class="box">
+          <img class="logo" src="/static/images/loading/logo.gif" />
+          <div class="name"><span class="left">SHEEP</span><span class="right">JS</span></div>
+        </div>
+        <div class="title">应用加载中，请稍等片刻...</div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+<script>
+  document.querySelector('.preload').className = `preload ${
+      JSON.parse(localStorage.getItem('_SHEEP_darkMode'))?.data
+    }`;
+</script>
+<style>
+  /* 去除浏览器表单自动填充样式*/
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-text-fill-color: #000 !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    background-color: transparent;
+    background-image: none;
+    transition: background-color 50000s ease-in-out 0s;
+  }
+
+  input {
+    background-color: transparent;
+  }
+</style>
 </html>

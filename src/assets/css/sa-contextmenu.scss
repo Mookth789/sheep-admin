@@ -1,0 +1,27 @@
+// .v-contextmenu 右键点击
+@import 'v-contextmenu/dist/themes/default.css';
+
+.v-contextmenu {
+  position: absolute;
+  z-index: 9999 !important;
+  background-color: var(--sa-card-background) !important;
+  border: 1px solid var(--sa-border) !important;
+}
+
+.v-contextmenu-item {
+  color: var(--sa-title) !important;
+  display: flex;
+  align-items: center;
+
+  &--hover {
+    color: #fff !important;
+    background: var(--el-color-primary) !important;
+  }
+}
+.v-contextmenu-item--disabled {
+  color: var(--sa-font) !important;
+}
+
+.v-contextmenu-divider {
+  border-bottom: 1px solid var(--sa-border);
+}
